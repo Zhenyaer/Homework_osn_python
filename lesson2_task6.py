@@ -19,14 +19,3 @@ while True:
         break
 
 print(goods)
-
-an_goods = {}
-for product in goods:
-    for key, value in product[-1].items():
-        if key in an_goods:
-            if value not in an_goods.get(key):
-                an_goods.get(key).append(value)
-        else:
-            an_goods.update({key: [value]})
-
-print(an_goods)
