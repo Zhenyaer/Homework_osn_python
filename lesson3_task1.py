@@ -1,11 +1,16 @@
-def division():
+def division(arg1, arg2):
     # Выводит результат деления двух чисел
-    arg1 = int(input('Введите делимое: '))
-    while True:
-        arg2 = int(input('Введите делитель: '))
-        if arg2 != 0:
-            res = arg1 / arg2
-            return f'Результат деления равен: {res}'
+    res = arg1 / arg2
+    return f'Результат деления равен: {res}'
 
 
-print(division())
+x = int(input('Введите делимое: '))
+while True:
+    y = int(input('Введите делитель: '))
+    if y != 0:
+        break
+    else:
+        print('Делить на 0 нельзя! Введите другое число')
+        continue
+
+print(division(x, y))
