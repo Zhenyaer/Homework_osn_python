@@ -14,7 +14,7 @@ def my_func_2(x, y):
     # Возводит в степень c помощью цикла
     res = x
     for i in range(abs(y) + 1):
-        res = res / y
+        res = res / x
     return f'Результат возведения в степень равен {res}'
 
 
