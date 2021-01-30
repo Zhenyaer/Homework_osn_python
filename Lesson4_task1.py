@@ -7,7 +7,7 @@ def salary():
         sal = rate * time_worked + prize
         return f'Размер заработной платы сотрудника составил {sal}'
     except ValueError:
-        return 'Допустим только ввод числовых значения!'
+        return 'Допустим только ввод числовых значений!'
 
 
 print(salary())
