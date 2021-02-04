@@ -6,6 +6,8 @@ schedule = {}
 count = []
 
 for i in range(len(content)):
-    schedule[(content[i].split()[0][:-1])] = sum(map(int, re.findall(r'\d+', content[i])))
+    subject = (content[i].split()[0][:-1])
+    total = sum(map(int, re.findall(r'\d+', content[i])))
+    schedule[subject] = total
 
 print(schedule)
