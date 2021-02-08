@@ -4,13 +4,13 @@ class Road:
         self._length = length
         self._width = width
 
-    def massa(self):
+    def mass(self):
         # удельная масса (кг/(м2*см)) и толщина (см)
         m = 25
         width = 10
-        mass = self._length * self._width * m * width / 1000
-        print(f'Для строительства дороги потребуется {int(mass)} тонн асфальта.')
+        m_full = self._length * self._width * m * width / 1000
+        print(f'Для строительства дороги потребуется {int(m_full)} тонн асфальта.')
 
 
 road_mass = Road(10000, 25)
-road_mass.massa()
+road_mass.mass()
